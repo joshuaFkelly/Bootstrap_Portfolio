@@ -13,8 +13,8 @@
 
 <body>
 
-    <!-- -------------------------------------------------- NavBar ------------------------------------------------------ -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- -------------------------------------------- Sticky NavBar ------------------------------------------------------ -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
         <!-- Container to keep Navbar content centered -->
         <div class="container">
             <!-- Brand Name. Usually an icon goes here. -->
@@ -46,7 +46,30 @@
     <!-- ------------------------------------------------ End NavBar ------------------------------------------------- -->
 
 
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
 
+        <div class="container">
+
+            <!-- Used flex to bring h1 and p div next to image. Blocks flex at small screen size to display stacked -->
+            <div class="d-sm-flex">
+
+                <div>
+                    <h1>About <span class="text-success">Me</span></h1>
+                    <p class="lead my-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium fugit
+                        dolorem
+                        tenetur, iste ea amet quam obcaecati reiciendis iusto quas voluptates laborum eius. Rem earum
+                        eius, nulla delectus beatae impedit!</p>
+                </div>
+                <!-- d-block is display block. we are blocking it all times except after sm screen size -->
+                <img class="img-fluid w-50  d-none d-sm-block" src="assets/images/happy-person-icon-png-5.jpg"
+                    alt="profilePicture">
+
+            </div>
+
+
+        </div>
+
+    </section>
 
 
 
