@@ -13,9 +13,37 @@
 
 <body>
 
+    <!-- -------------------------------------------- Sticky NavBar ------------------------------------------------------ -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <!-- Container to keep Navbar content centered -->
+        <div class="container">
+            <!-- Brand Name. Usually an icon goes here. -->
+            <a href="index.html" class="navbar-brand">Joshua Kelly</a>
+            <!-- Collapsable Hambuger Icon. toggle, toggler/toggler-icon, data-bs-target/toggle -->
+            <button title="hamburgerIcon" class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar menu with navlinks. Collapses in to Hamgburger Icon and md screen size -->
+            <div id="navbarMenu" class="collapse navbar-collapse">
+                <!-- ms-auto means margin start auto. Shifts links to the right.  -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
+        </div>
 
-
+    </nav>
+    <!-- ------------------------------------------------ End NavBar ------------------------------------------------- -->
 
 
 
