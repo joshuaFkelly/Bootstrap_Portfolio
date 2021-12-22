@@ -11,7 +11,74 @@
     <title>My Portfolio(BootStrap)</title>
 </head>
 
-<body>
+<body class="bg-secondary">
+
+    <!-- -------------------------------------------- Sticky NavBar ------------------------------------------------------ -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <!-- Container to keep Navbar content centered -->
+        <div class="container">
+            <!-- Brand Name. Usually an icon goes here. -->
+            <a href="index.html" class="navbar-brand">Joshua Kelly</a>
+            <!-- Collapsable Hambuger Icon. toggle, toggler/toggler-icon, data-bs-target/toggle -->
+            <button title="hamburgerIcon" class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar menu with navlinks. Collapses in to Hamgburger Icon and md screen size -->
+            <div id="navbarMenu" class="collapse navbar-collapse">
+                <!-- ms-auto means margin start auto. Shifts links to the right.  -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- ------------------------------------------------ End NavBar ------------------------------------------------- -->
+
+
+
+
+
+
+    <section>
+        <div class="container rounded-3 bg-light w-50 my-5 border border-dark border-3">
+            <div class="row bg-primary border-bottom border-dark border-3 text-center">
+                <h1>Contact Me!</h1>
+            </div>
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name: </label>
+                <input type="text" aria-label="John" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name: </label>
+                <input type="text" aria-label="Doe " class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email: </label>
+                <input type="email" aria-label="name@example.com" class="form-control">
+                <div class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="portfolioReviewTextArea" class="form-label">Leave a message that will display on my
+                    portfolio reviews page!!</label>
+                <textarea class="form-control" id="portfolioReviewTextArea" rows="3"></textarea>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary ms-3 mb-3">Submit</button>
+            </div>
+        </div>
+
+    </section>
 
 
 
@@ -22,15 +89,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
+    <!-- Footer Sticky -->
+    <footer class="bg-dark text-light text-center absolute-bottom p-3">
+        <span class="lead">My Portfolio &copy</span>
+    </footer>
 
 
 
